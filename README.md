@@ -7,6 +7,8 @@ Hands-on **Azure Machine Learning (DP-100)** and **Microsoft AI Foundry / Azure 
 > - AI Studio / AI Foundry: https://github.com/MicrosoftLearning/mslearn-ai-studio/blob/main/index.md  
 > Content here is **expanded** with additional explanations, examples, screenshots, troubleshooting, and reusable templates.
 
+_NOTE_: Repository in work/progress phase some section will be updated and reworked. 
+
 ---
 
 ## Table of contents
@@ -16,8 +18,8 @@ Hands-on **Azure Machine Learning (DP-100)** and **Microsoft AI Foundry / Azure 
 - [Prerequisites](#prerequisites)
 - [Quickstart](#quickstart)
 - [Responsible AI (RAI) dashboards](#responsible-ai-rai-dashboards)
-- [Privacy & SmartNoise](#privacy--smartnoise)
-- [GenAI: RAG + fine-tuning](#genai-rag--fine-tuning)
+- [Privacy & SmartNoise](#privacy--smartnoise) [in progress]
+- [GenAI: RAG + fine-tuning](#genai-rag--fine-tuning) [in progress]
 - [Cheatsheets](#cheatsheets)
 - [Artifacts & large files](#artifacts--large-files)
 - [Contributing](#contributing)
@@ -48,7 +50,7 @@ This repository is designed as a **single hub** for practical, exam-aligned, rea
 - Privacy-aware data practices and examples
 - Usage examples with **SmartNoise** (or similar DP tooling where applicable)
 
-### GenAI (AI Foundry / Azure AI Studio-aligned)
+### GenAI (AI Foundry / Azure AI Studio-aligned) [in progress]
 - RAG with **Azure AI Search**
 - Promptflow / orchestration patterns (where used)
 - Fine-tuning patterns for LLMs (where supported/available in your tenant)
@@ -61,8 +63,4 @@ This repository is designed as a **single hub** for practical, exam-aligned, rea
 - Troubleshooting playbook for common Azure issues
 
 ---
-
-## Repository layout
-
-> This is the **recommended** structure for this repo. Adjust freely.
 

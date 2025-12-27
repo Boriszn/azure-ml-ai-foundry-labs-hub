@@ -121,7 +121,7 @@ For local execution, you'll typically need:
 
     -   Azure ML workspace (DP-100 content)
 
-    -   AI Foundry / Azure AI Studio (GenAI content)
+    -   AI Foundry / Azure AI Studio (GupenAI content)
 
     -   Azure Storage (used by both)
 
@@ -180,9 +180,9 @@ Recommended practice:
 
 -   Save key dashboard screenshots under:
 
-    -   `artifacts/rai/`
+    -   `/rai/`
 
-    -   `artifacts/screenshots/`
+    -   `/screenshots/`
 
 If a notebook produces a dashboard, document:
 

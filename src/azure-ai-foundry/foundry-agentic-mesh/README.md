@@ -29,7 +29,7 @@ A small demo project for a meetup talk:
 - Index creation and ingestion performed through the **Import data (new)** wizard.
 
 ### MCP Docs Server (tool service)
-- Exposes a small, stable tool interface over HTTP (OpenAPI 3.0).
+- Exposes a small, stable tool interface over HTTP (OpenAPI 3.0, FastMCP).
 - Implements retrieval against Azure AI Search.
 - Produces a change request draft artifact as JSON/Markdown for the demo.
 

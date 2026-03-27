@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  mcp-docs-server:
+    build:
+      context: ./services/mcp-docs-server
+    environment:
+      - AZURE_SEARCH_ENDPOINT=${AZURE_SEARCH_ENDPOINT}
+      - AZURE_SEARCH_INDEX_NAME=${AZURE_SEARCH_INDEX_NAME}
+      - AZURE_SEARCH_API_KEY=${AZURE_SEARCH_API_KEY}
+      - AZURE_SEARCH_API_VERSION=${AZURE_SEARCH_API_VERSION:-2024-07-01}
+      - CHANGE_REQUEST_OUTPUT_DIR=/app/change_requests_out
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data/change_requests_out:/app/change_requests_out

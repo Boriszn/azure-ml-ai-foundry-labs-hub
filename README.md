@@ -138,7 +138,7 @@ For local execution, you'll typically need:
 Quickstart
 ----------
 
-### Option A --- Run in Azure ML Studio / AI Foundry (recommended)
+### Option A - Run in Azure ML Studio / AI Foundry (recommended)
 
 1.  Create or open your **Azure ML Workspace** or **AI Foundry Project**.
 

@@ -1,0 +1,32 @@
+flowchart LR
+  U[User] --> FUI[Azure AI Foundry\nAgent Playground (Chat UI)]
+
+  subgraph AF[Azure AI Foundry Project]
+    A1[Agent 1: Orchestrator\n(GPT‑4o mini)]
+    A3[Agent 3: Policy/Docs\n(GPT‑4o mini)]
+    A1 -->|Connected Agent Tool| A3
+  end
+
+  FUI --> A1
+
+  subgraph MCP[MCP Docs Server (HTTP + OpenAPI)]
+    T1[POST /tools/search_docs]
+    T2[POST /tools/create_change_request]
+  end
+
+  A1 -->|OpenAPI tool call| MCP
+  MCP -->|Query| AIS[Azure AI Search\n(Index + Retriever)]
+
+  subgraph SA[Existing Storage Account]
+    BLOB[Blob container (demo docs)]
+  end
+
+  BLOB -->|Import data (new)\nData source → Index → Indexer| AIS
+
+  subgraph OBS[Ops]
+    KV[Key Vault (optional)]
+    AI[App Insights/Logs (optional)]
+  end
+
+  MCP -.secrets.-> KV
+  MCP -.traces.-> AI

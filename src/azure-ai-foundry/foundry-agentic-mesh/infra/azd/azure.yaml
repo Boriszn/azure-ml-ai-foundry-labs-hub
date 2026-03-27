@@ -1,0 +1,8 @@
+name: meetup-foundry-mcp-demo
+metadata:
+  template: meetup-foundry-mcp-demo@0.1.0
+services:
+  mcp-docs-server:
+    project: ../../services/mcp-docs-server
+    language: python
+    host: containerapp

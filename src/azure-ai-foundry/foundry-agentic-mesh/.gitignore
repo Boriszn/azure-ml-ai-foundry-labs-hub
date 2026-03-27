@@ -1,0 +1,7 @@
+.state/
+.venv/
+__pycache__/
+*.pyc
+.env
+data/change_requests_out/*
+!.gitkeep

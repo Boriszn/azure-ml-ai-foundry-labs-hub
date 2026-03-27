@@ -10,11 +10,7 @@ A small demo project for a meetup talk:
   - `search_docs(query, top_k)` → queries Azure AI Search
   - `create_change_request(...)` → writes a change request draft artifact
 
-> Note on terminology: “MCP server” here is implemented as a tool service with an OpenAPI contract (HTTP). This matches the practical “agent calls tools” shape for demos and integrates cleanly with Foundry OpenAPI tools.
-
 ---
-
-
 
 ## Architecture
 
